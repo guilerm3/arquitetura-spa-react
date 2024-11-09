@@ -5,7 +5,7 @@
 Este projeto é um site *SPA* desenvolvido utilizando React, projetado para proporcionar uma experiência interativa e intuitiva aos usuários. O objetivo principal é o aprendizado.
 
 ## Tecnologias Usadas
-React / JavaScript / TypeScript / HTML / CSS / Consumo de API Rest
+React / JavaScript / HTML / CSS / Consumo de API Rest / Postman API
 
 ## Funcionalidades
 
