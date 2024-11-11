@@ -3,6 +3,7 @@ import './ContactForm.css'
 
 //COMPONENTS//
 import Button from '../Button/Button'
+import { findDOMnode } from 'react-dom'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -11,11 +12,31 @@ function ContactForm() {
         message:''
     })
     const [isFormValid, setIsFormValid] = useState(false)
+    const [formSubmitLoading, setFormSubmitLoading] = useState(false)
+    const [formSubmited, setFormSubmitted] = useState(false)
 
     const handleSubmit =  async (e) =>{
         e.preventDefault()
         if (isFormValid){
-            null
+            setFormSubmitLoading(true)
+            try{
+                const response = await fetch('https://api.web3forms.com/submit',{
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({...formData, access_key: "67e962d7-371e-4077-b3af-b1e08729721a"})
+                })
+
+                if(response.ok){
+                    setFormSubmitted(true)
+                }else{
+                    alert('Erro ao enviar!')
+                }
+            } catch(e){
+                alert('Erro: ', e)
+            }finally{
+                setFormSubmitLoading(false)
+            }
         }
     }
 
@@ -44,7 +65,7 @@ function ContactForm() {
     return (
         <div className='contact-form d-flex fd-column al-center'>
             <h2>We love meeting new people and helping them.</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className='d-flex form-group'>
                     <input
                         className='form-input'
@@ -69,11 +90,13 @@ function ContactForm() {
                         id="message"
                         name="message"
                         placeholder='Mensagem *'
+                        onChange={handleChange}
                         rows="4"
                     ></textarea>
                 </div>
                 <div className='al-center d-flex jc-end form-group'>
-                    <Button type='submit' buttonStyle='secondary' disabled={!isFormValid}>
+                    {formSubmited && <p className='text-primary'>Sucesso</p>}
+                    <Button type='submit' buttonStyle='secondary' disabled={!isFormValid || formSubmitLoading}>
                         Enviar
                     </Button>
                 </div>
