@@ -47,13 +47,14 @@ Se você deseja executar em um servidor local, pode usar uma ferramenta como o [
 │   └── assets/              # Imagens e outros assets estáticos
 ├── src/
 │   ├── assets/              # Imagens e arquivos estáticos utilizados no React
-│   ├── components/          # Componentes React reutilizáveis (ex: Header, Footer, Card)
+│   ├── components/          # Componentes React reutilizáveis (ex: Header, Footer, Button etc...)
 │   │   ├── Header.jsx
 │   │   ├── ProjectCard.jsx
 │   │   └── Footer.jsx
 │   ├── pages/               # Páginas
 │   │   ├── Home.jsx
 │   │   ├── Projects.jsx
+│   │   ├── About.jsx
 │   │   └── Contact.jsx
 │   ├── App.jsx              # Componente principal que renderiza as páginas e componentes
 │   ├── main.jsx             # Ponto de entrada (onde o React DOM é renderizado)
