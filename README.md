@@ -1,6 +1,6 @@
 # Portfólio02
 
-Este repositório contém o código-fonte do meu portfólio pessoal de sites, desenvolvido para demonstrar minhas habilidades em desenvolvimento web. Aqui, você encontrará uma coleção de projetos que criei, com ênfase em design responsivo, performance e melhores práticas de desenvolvimento.
+Este repositório contém o código do meu portfólio pessoal de sites, desenvolvido para demonstrar minhas habilidades em desenvolvimento web. Aqui, você encontrará uma coleção de projetos que criei, com ênfase em design responsivo, performance e melhores práticas de desenvolvimento.
 
 ## 🖥️ Sobre
 
