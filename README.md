@@ -51,7 +51,7 @@ Se você deseja executar em um servidor local, pode usar uma ferramenta como o [
 │   │   ├── Header.jsx
 │   │   ├── ProjectCard.jsx
 │   │   └── Footer.jsx
-│   ├── pages/               # Páginas ou "views" do seu portfólio
+│   ├── pages/               # Páginas
 │   │   ├── Home.jsx
 │   │   ├── Projects.jsx
 │   │   └── Contact.jsx
