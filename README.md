@@ -65,4 +65,9 @@ Se você deseja executar em um servidor local, pode usar uma ferramenta como o [
 ├── .gitignore               # Arquivos que devem ser ignorados pelo Git
 ├── package.json             # Dependências e scripts do projeto
 ├── README.md                # Este arquivo
+```
 
+## 💻 Demonstração
+Você pode visualizar o site online em:
+
+https://guilerm3.github.io/dnc-arq-guilherme/
