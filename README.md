@@ -7,7 +7,7 @@ Este repositório contém o código-fonte do meu portfólio pessoal de sites, de
 Este site é um portfólio interativo que inclui:
 
 - **Home page** com uma visão geral do site.
-- **Página de projetos** com um grid que recebe as informações e imagens de uma API rest.
+- **Página de projetos** com um grid que recebe as informações e imagens de uma API e controle sobre o "LIKE" utilizando localStorage.
 - **Seção de contato** para permitir a comunicação direta com possíveis clientes também conectada a uma API rest tipo POST.
 - **Design responsivo**, garantindo boa experiência em diferentes dispositivos (desktop, celular).
 
