@@ -62,7 +62,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='d-flex jc-space-between footer-copy'>
-                    <p className='grey-1-color'>Copyright © DNC - 2024</p>
+                    <p className='grey-1-color'>Copyright © Guilherme - 2024</p>
                     <div className='langs-area d-flex'>
                         <Button buttonStyle='unstyled' onClick={()=> changeLanguage('br')}>
                             <img src={BrazilIcon} height='29px'/>
