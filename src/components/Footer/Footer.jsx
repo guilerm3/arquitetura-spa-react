@@ -8,7 +8,7 @@ import FacebookIcon from '../../assets/facebook-icon.svg'
 import LinkedinIcon from '../../assets/linkedin-icon.svg'
 import InstagramIcon from '../../assets/instagram-icon.svg'
 import TwitterIcon from '../../assets/twitter-icon.svg'
-import Logo from '../../assets/dnc-logo.svg'
+import Logo from '../../assets/dnc-logo.png'
 import Button from '../Button/Button'
 
 //CONTEXT
@@ -26,7 +26,7 @@ function Footer() {
             <div className="container">
                 <div className='d-flex jc-space-between mobile-fd-column'>
                     <div className='footer-logo-col'>
-                        <img src={Logo} className='footer-logo'/>
+                        <img src={Logo} height="80px" className='footer-logo'/>
                         <p className='grey-1-color'>{appContext.languages[appContext.language].general.footerLogoText}</p>
                         <div className='d-flex social-links'>
                             <a href="https://google.com" target='_blank'>
